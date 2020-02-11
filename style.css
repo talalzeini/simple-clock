@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    width:100%
+}
+body{
+    overflow: hidden;
+ 
+}
+.image{
+    width:100%;
+    height:auto;
+}
+#digitalclock{
+    width:100%;
+    position:absolute;
+    font-size:9vw;
+    margin: auto;
+    color:white;
+    font-weight:900;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20%;
+}
