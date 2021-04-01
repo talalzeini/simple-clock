@@ -1,4 +1,4 @@
-function realtimeClock(){
+function start(){
     var rtClock = new Date();
 
     var hours = rtClock.getHours();
@@ -12,7 +12,7 @@ function realtimeClock(){
     minutes = ("0" + minutes).slice(-2);
     seconds = ("0" + seconds).slice(-2);
 
-    document.getElementById('digitalclock').innerHTML =
+    document.getElementById('clock').innerHTML =
     hours + " : " + minutes + " : " + seconds + " " + amPm;
-    var t = setTimeout(realtimeClock, 500);
+    var t = setTimeout(start, 500);
 }
