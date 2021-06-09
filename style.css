@@ -4,22 +4,6 @@ body {
   background: black;
   overflow: hidden;
 }
-.clock {
-  width: 100%;
-  position: absolute;
-  font-size: 9vw;
-  margin: auto;
-  line-height: 100vh;
-  color: white;
-  font-weight: 900;
-  text-align: center;
-  font-family: "Avenir";
-}
-/* This will not let anything be highlighted with the mouse */
-/* This will not let anything be highlighted with the mouse */
-/* This will not let anything be highlighted with the mouse */
-/* This will not let anything be highlighted with the mouse */
-/* This will not let anything be highlighted with the mouse */
 * {
   font-family: "Avenir";
   -webkit-touch-callout: none;
@@ -28,8 +12,15 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
 }
-/* This will not let anything be highlighted with the mouse */
-/* This will not let anything be highlighted with the mouse */
-/* This will not let anything be highlighted with the mouse */
-/* This will not let anything be highlighted with the mouse */
-/* This will not let anything be highlighted with the mouse */
+.clock {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 9vw;
+  margin: auto;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  font-family: "Avenir";
+}
