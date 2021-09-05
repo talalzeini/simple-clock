@@ -1,18 +1,14 @@
 function start(){
-    var rtClock = new Date();
-
-    var hours = rtClock.getHours();
-    var minutes = rtClock.getMinutes();
-    var seconds = rtClock.getSeconds();
-
-    var amPm = ( hours < 12 ) ? "AM" : "PM";
-    hours = ( hours > 12 ) ? hours -12 : hours;
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
  
     hours = ("0" + hours).slice(-2);
     minutes = ("0" + minutes).slice(-2);
     seconds = ("0" + seconds).slice(-2);
 
     document.getElementById('clock').innerHTML =
-    hours + " : " + minutes + " : " + seconds + " " + amPm;
-    var t = setTimeout(start, 500);
+    hours + " : " + minutes + " : " + seconds;
+    setTimeout(start, 0);
 }
