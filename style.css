@@ -1,16 +1,12 @@
 html,
 body {
-  width: 100%;
-  background: black;
+  background: #000000;
   overflow: hidden;
 }
 * {
   font-family: "Avenir";
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  user-select: none;
 }
 .clock {
   width: 100%;
@@ -19,7 +15,7 @@ body {
   transform: translateY(-50%);
   font-size: 9vw;
   margin: auto;
-  color: white;
+  color: #ffffff;
   font-weight: 900;
   text-align: center;
   font-family: "Avenir";
